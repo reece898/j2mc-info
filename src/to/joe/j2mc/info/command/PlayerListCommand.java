@@ -28,7 +28,7 @@ public class PlayerListCommand extends MasterCommand {
             }
             sender.sendMessage(ChatColor.AQUA + "Players (" + total + "/" + plugin.getServer().getMaxPlayers() + "):");
             if (total == 0) {
-                sender.sendMessage(ChatColor.RED + "No one is online :(");
+                sender.sendMessage(ChatColor.RED + "No one is online ):");
                 return;
             }
             StringBuilder builder = new StringBuilder();
@@ -53,7 +53,7 @@ public class PlayerListCommand extends MasterCommand {
         } else {
             sender.sendMessage(ChatColor.AQUA + "Players (" + plugin.getServer().getOnlinePlayers().length + "/" + plugin.getServer().getMaxPlayers() + "):");
             if (plugin.getServer().getOnlinePlayers().length == 0) {
-                sender.sendMessage(ChatColor.RED + "No one is online :(");
+                sender.sendMessage(ChatColor.RED + "No one is online ):");
                 return;
             }
             StringBuilder builder = new StringBuilder();
